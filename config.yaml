@@ -1,0 +1,40 @@
+# Vault Sync MCP - Scope Configuration
+# Personal vault is SOURCE OF TRUTH
+
+personal_vault: ~/vault/
+team_vault: ~/team-vault/
+
+# Folders that NEVER sync to team vault (personal content stays local)
+no_sync:
+  - "Daily Logs/"
+  - "Home/"
+  - "Journal/"
+  - "Personal/"
+  - "Writing/"
+  - "Meta/"
+  - "Inbox/"
+
+# Folders that sync (with optional filters)
+sync_rules:
+  - path: "Team/"
+    direction: bidirectional
+    filter: null  # sync everything in this folder
+
+  - path: "CRM/"
+    direction: personal_to_team
+    filter:
+      frontmatter_field: relationship
+      # Only sync contacts with these relationship types
+      frontmatter_values:
+        - client
+        - team
+        - contractor
+        - advisor
+        - co-founder
+
+# Frontmatter override: any file with sync: false is excluded
+frontmatter_block_field: sync
+frontmatter_block_value: false
+
+# Sync log location (relative to personal vault root)
+sync_log: "Meta/Vault Sync Log.md"
