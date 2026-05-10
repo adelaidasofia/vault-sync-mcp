@@ -89,6 +89,27 @@ Add `sync: false` to any file's frontmatter to exclude it from all sync operatio
 - Content hashing via xxhash for fast change detection
 - Conflict resolution: newer file wins; conflicts are logged and skipped
 
+## Related MCPs
+
+Same author, same architecture pattern (FastMCP, draft+confirm on writes where applicable, vault auto-export, MIT):
+
+- [slack-mcp](https://github.com/adelaidasofia/slack-mcp) - multi-workspace Slack
+- [imessage-mcp](https://github.com/adelaidasofia/imessage-mcp) - macOS iMessage
+- [whatsapp-mcp](https://github.com/adelaidasofia/whatsapp-mcp) - WhatsApp via whatsmeow
+- [google-workspace-mcp](https://github.com/adelaidasofia/google-workspace-mcp) - Gmail / Calendar / Drive / Docs / Sheets
+- [apollo-mcp](https://github.com/adelaidasofia/apollo-mcp) - Apollo.io CRM + sequences
+- [substack-mcp](https://github.com/adelaidasofia/substack-mcp) - Substack writing + analytics
+- [luma-mcp](https://github.com/adelaidasofia/luma-mcp) - lu.ma events
+- [parse-mcp](https://github.com/adelaidasofia/parse-mcp) - markitdown / Docling / LlamaParse router
+- [rescuetime-mcp](https://github.com/adelaidasofia/rescuetime-mcp) - RescueTime productivity data
+- [graph-query-mcp](https://github.com/adelaidasofia/graph-query-mcp) - vault knowledge graph queries
+- [graph-autotagger-mcp](https://github.com/adelaidasofia/graph-autotagger-mcp) - wikilink suggestions from the graph
+- [investor-relations-mcp](https://github.com/adelaidasofia/investor-relations-mcp) - seed-raise pipeline tracker
+
 ## License
 
 MIT
+
+---
+
+Built by Adelaida Diaz-Roa. Full install or team version at [diazroa.com](https://diazroa.com).
