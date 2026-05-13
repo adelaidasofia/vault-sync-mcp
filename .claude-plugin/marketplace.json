@@ -1,0 +1,15 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "vault-sync-mcp",
+  "owner": {
+    "name": "Mycelium AI",
+    "url": "https://myceliumai.co"
+  },
+  "plugins": [
+    {
+      "name": "vault-sync-mcp",
+      "source": "./",
+      "description": "FastMCP server for bidirectional sync between a personal Obsidian vault and a shared team vault. Designed for teams where one person maintains the source of truth and shares selected content with collaborators via Google Drive, Dropbox, or similar."
+    }
+  ]
+}
