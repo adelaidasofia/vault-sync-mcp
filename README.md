@@ -15,11 +15,27 @@ Both push and pull default to `dry_run: true` — you always preview before exec
 
 ## Install
 
+Open Claude Code, paste:
+
+    /plugin marketplace add adelaidasofia/vault-sync-mcp
+    /plugin install vault-sync-mcp@vault-sync-mcp
+
+Then edit `config.yaml` to set your vault paths and sync rules:
+
+```yaml
+personal_vault: ~/vault/
+team_vault: ~/team-vault/
+```
+
+Restart Claude Code. Then ask:
+> "Show me vault sync status"
+> "Push changes to team vault (dry run first)"
+
+<details><summary>Legacy install</summary>
+
 ```bash
 pip install fastmcp python-frontmatter pyyaml xxhash
 ```
-
-## Setup
 
 1. Clone:
    ```bash
@@ -41,6 +57,8 @@ pip install fastmcp python-frontmatter pyyaml xxhash
 4. Restart Claude Code. Then ask:
    > "Show me vault sync status"
    > "Push changes to team vault (dry run first)"
+
+</details>
 
 ## Configuration
 

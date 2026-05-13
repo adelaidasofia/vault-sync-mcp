@@ -1,0 +1,9 @@
+{
+  "name": "vault-sync-mcp",
+  "description": "FastMCP server for bidirectional sync between a personal Obsidian vault and a shared team vault. Provides 4 tools: vault_sync_status, vault_sync_push, vault_sync_pull, vault_scope_check. Push and pull default to dry_run=true for preview-before-execute safety.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Mycelium AI",
+    "url": "https://myceliumai.co"
+  }
+}
