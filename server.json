@@ -16,6 +16,7 @@
       "transport": {
         "type": "stdio"
       },
+      "fileSha256": "69b9728a10d810b61cc1d07c416277dc9419d8e3ef1c3a6bf9c84eb001492e93",
       "environmentVariables": [
         {
           "name": "PERSONAL_VAULT_PATH",
