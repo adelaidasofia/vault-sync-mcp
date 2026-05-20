@@ -11,12 +11,12 @@
   "packages": [
     {
       "registryType": "mcpb",
-      "identifier": "https://github.com/adelaidasofia/vault-sync-mcp/releases/latest/download/vault-sync-mcp.mcpb",
+      "identifier": "https://github.com/adelaidasofia/vault-sync-mcp/releases/download/v0.1.0/vault-sync-mcp.mcpb",
       "version": "0.1.0",
       "transport": {
         "type": "stdio"
       },
-      "fileSha256": "69b9728a10d810b61cc1d07c416277dc9419d8e3ef1c3a6bf9c84eb001492e93",
+      "fileSha256": "29179b4ad6cdfdab5bd2b135be2fa82e3098f2506b2f74b90821ab25c7d6042c",
       "environmentVariables": [
         {
           "name": "PERSONAL_VAULT_PATH",
