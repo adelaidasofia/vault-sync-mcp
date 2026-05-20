@@ -1,0 +1,65 @@
+{
+  "manifest_version": "0.4",
+  "name": "vault-sync-mcp",
+  "display_name": "FastMCP server for bidirectional sync between personal and team Obsidian vaults",
+  "version": "0.1.0",
+  "description": "FastMCP server for bidirectional sync between personal and team Obsidian vaults.",
+  "author": {
+    "name": "Adelaida Diaz-Roa",
+    "url": "https://github.com/adelaidasofia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adelaidasofia/vault-sync-mcp.git"
+  },
+  "homepage": "https://github.com/adelaidasofia/vault-sync-mcp",
+  "documentation": "https://github.com/adelaidasofia/vault-sync-mcp#readme",
+  "support": "https://github.com/adelaidasofia/vault-sync-mcp/issues",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "fastmcp",
+    "vault-sync"
+  ],
+  "server": {
+    "type": "python",
+    "entry_point": "server.py",
+    "mcp_config": {
+      "command": "python3",
+      "args": [
+        "${__dirname}/server.py"
+      ],
+      "env": {
+        "PERSONAL_VAULT_PATH": "${user_config.personal_vault_path}",
+        "TEAM_VAULT_PATH": "${user_config.team_vault_path}"
+      }
+    }
+  },
+  "tools_generated": true,
+  "compatibility": {
+    "claude_desktop": ">=0.10.0",
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ]
+  },
+  "user_config": {
+    "personal_vault_path": {
+      "type": "string",
+      "title": "Personal vault path",
+      "description": "Absolute path to your personal Obsidian vault root",
+      "required": true,
+      "sensitive": false
+    },
+    "team_vault_path": {
+      "type": "string",
+      "title": "Team vault path",
+      "description": "Absolute path to your team Obsidian vault root",
+      "required": true,
+      "sensitive": false
+    }
+  }
+}
