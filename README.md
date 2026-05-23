@@ -1,5 +1,20 @@
 # vault-sync-mcp
 
+
+<!-- mycelium-badges:start -->
+
+<p>
+  <a href="https://github.com/adelaidasofia/vault-sync-mcp/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/adelaidasofia/vault-sync-mcp?color=blue"></a>
+  <a href="https://github.com/adelaidasofia/vault-sync-mcp/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/adelaidasofia/vault-sync-mcp?color=eab308"></a>
+  <a href="https://github.com/adelaidasofia/vault-sync-mcp/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/adelaidasofia/vault-sync-mcp"></a>
+  <a href="https://github.com/adelaidasofia/vault-sync-mcp/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/adelaidasofia/vault-sync-mcp"></a>
+  <a href="https://pypi.org/project/adelaidasofia-vault-sync-mcp/"><img alt="PyPI version" src="https://img.shields.io/pypi/v/adelaidasofia-vault-sync-mcp?color=blue&label=pypi"></a>
+  <a href="https://pypi.org/project/adelaidasofia-vault-sync-mcp/"><img alt="PyPI downloads" src="https://img.shields.io/pypi/dm/adelaidasofia-vault-sync-mcp?color=blue&label=downloads"></a>
+  <a href="https://myceliumai.co"><img alt="Built by Mycelium AI" src="https://img.shields.io/badge/built_by-Mycelium_AI-15B89A"></a>
+</p>
+
+<!-- mycelium-badges:end -->
+
 A FastMCP server for bidirectional sync between a personal Obsidian vault and a shared team vault. Designed for teams where one person (the vault owner) maintains the source of truth and shares selected content with collaborators via a shared folder (Google Drive, Dropbox, etc.).
 
 ## Tools
