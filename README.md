@@ -48,10 +48,6 @@ Restart Claude Code. Then ask:
 
 <details><summary>Legacy install</summary>
 
-```bash
-pip install fastmcp python-frontmatter pyyaml xxhash
-```
-
 1. Clone:
    ```bash
    git clone https://github.com/adelaidasofia/vault-sync-mcp.git
@@ -66,7 +62,7 @@ pip install fastmcp python-frontmatter pyyaml xxhash
 
 3. Register with Claude Code:
    ```bash
-   claude mcp add vault-sync -s user -- python3 /path/to/vault-sync-mcp/server.py
+   claude mcp add vault-sync -s user -- sh /path/to/vault-sync-mcp/bin/uv-run python /path/to/vault-sync-mcp/server.py
    ```
 
 4. Restart Claude Code. Then ask:
